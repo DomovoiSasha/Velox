@@ -5,3 +5,98 @@
 	text-decoration none
 	outline none
 	list-style none
+	
+body
+	width 100%
+	max-width 1400px
+	margin 0 auto
+	padding 0
+	background-color #ffffff
+	color grayText
+	font(OpenSans, 12px, 20px, 200)
+	
+.main-header
+	width 100%
+	background-color bluegray
+	background-image url('../images/header-bg.jpg')
+	background-repeat no-repeat
+	background-size auto 100%
+	background-position center
+	color #ffffff
+	
+	+retina()
+		background-image url('../images/header-bg@2.jpg')
+	
+	&__bunner
+		size(100%, 621px)
+		padding 192px 115px 150px
+		text-align center
+		
+	&__title
+		margin 0
+		padding-bottom 30px
+		font(Lora, 58px, 58px, 600)
+		
+	&__description
+		margin-bottom 85px
+		font(OpenSans, 25px, 25px, 400)
+		
+	&__btn-started
+		padding 26px 71px
+		background-color accent
+		color #fff
+		font(OpenSans, 25px, 25px, 400)
+		border 2px solid transparent
+		border-radius 36px
+		box-shadow 0 2px 2px 0 rgba(#000, 0.3)
+		
+		&:hover
+			background-color lighten(accent, 20%)
+		
+		&:active
+			background-color transparent
+			border-color accent
+	
+.top-header
+	position relative
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items center
+	size(100%, 90px)
+	padding 0 115px
+	
+	&__logo
+		size(130px, 38px)
+		text-decoration none
+		color #ffffff
+		
+		img
+			size(100%)
+			
+	&__btn-menu
+		display none
+		background-color transparent
+		border none
+			
+	&__btn-icon
+		size(100%)
+		fill #ffffff
+		
+.main-nav
+	&__item
+		display inline-block
+		margin 5px
+		padding 15px 25px
+		color #ffffff
+		text-decoration none
+		font(OpenSans, 14px, 14px, 600)
+		border-radius 25px
+		
+		&:hover
+			background-color rgba(#ffffff, 0.3)
+			
+		&:active
+			background-color rgba(#ffffff, 0.3)
+			color accent
+			

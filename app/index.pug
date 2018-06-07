@@ -8,21 +8,35 @@ DOCTYPE
 			meta(name='google' value='notranslate')
 			meta(name="robots" content="index, follow")
 			meta(name='description' content='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.')
-			meta(name='keywords' content='keywords')
+			meta(name='keywords' content='page, template, responsive')
 			link(href='assets/images/favicon.png'   rel='icon' type='image/png')
-			title Title
+			title Velox
+			script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
 
 			link(rel="stylesheet", href="assets/styles/style.min.css")
 
 		body
 
 			header.main-header
-				
+				div.main-header__top-header.top-header
+					a(href="#").top-header__logo.logo
+						img(src="assets/images/logo.png", alt="Velox")
+					nav.top-header__main-nav.main-nav
+						a(href="#").main-nav__item Services
+						a(href="#").main-nav__item Portfolio
+						a(href="#").main-nav__item Testimonials
+						a(href="#").main-nav__item About
+						a(href="#").main-nav__item Contact
+					button.top-header__btn-menu
+						svg.top-header__btn-icon
+							use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_menu')
+						
+				div.main-header__bunner
+					h1.main-header__title Velox One Page Template
+					p.main-header__description Clean, Responsive, customizable one page template 
+					button.main-header__btn-started Get Started Now
 					
-			main.main-content
-				
 			
-			footer.main-footer
 			
 			
 			script(type='text/javascript' src="assets/scripts/script.js")
