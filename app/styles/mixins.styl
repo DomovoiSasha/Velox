@@ -1,0 +1,21 @@
+clearfix()
+	&:after
+		display table
+		clear both
+		content ''
+		
+size($width, $height = $width)
+	width $width
+	height $height
+	
+font($name, $fsize = 16px, $lheight = $fsize, $fweight = 400)
+	font-family $name, sans-serif
+	font-size $fsize
+	line-height $lheight
+	font-weight $fweight
+	
+placeholder(prop, value)
+	&::-webkit-input-placeholder
+		{prop} value
+	&::-moz-input-placeholder
+		{prop} value
