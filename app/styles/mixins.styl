@@ -27,3 +27,19 @@ markertitle($margin = 30px, $width = 150px, $height = 4px)
 	display block
 	size($width, $height)
 	background-color accent
+	
+btn($paddingg = 26px, $paddingv = 71px, $fsize = 25px, $bradius = 36px)
+	padding $paddingg $paddingv
+	background-color accent
+	color #fff
+	font(OpenSans, $fsize, $fsize, 400)
+	border 2px solid transparent
+	border-radius $bradius
+	box-shadow 0 2px 2px 0 rgba(#000, 0.3)
+
+	&:hover
+		background-color lighten(accent, 20%)
+
+	&:active
+		background-color transparent
+		border-color accent
