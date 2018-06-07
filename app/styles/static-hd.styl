@@ -100,3 +100,73 @@ body
 			background-color rgba(#ffffff, 0.3)
 			color accent
 			
+.main-content
+	width 100%
+	
+.services
+	padding 70px 115px
+	text-align center
+	
+	&__title
+		position relative
+		margin-bottom 95px
+		text-transform uppercase
+		font(Lora, 43px, 43px, 600)
+		color textColor
+		
+		&:after
+			markertitle()
+			
+	&__list
+		display flex
+		flex-wrap nowrap
+		justify-content space-between
+		
+.service
+	size(283px, auto)
+	padding 20px 15px
+	text-align center
+	color grayText
+	border 1px solid transparent
+	border-radius 15%
+	
+	&:hover
+		border-color accent
+		
+		.service__name
+			color accent
+	
+	&__icon
+		display block
+		size(80px)
+		margin 0 auto 19px
+		background-color #f5f6f8
+		border-radius 50%
+		
+	&__svg
+		size(100%)
+		padding 23px
+		fill accent
+		
+	&__name
+		position relative
+		margin-bottom 18px
+		font(OpenSans, 18px, 18px, 600)
+		text-transform uppercase
+		color textColor
+		
+		&:after
+			markertitle(19px, 40px, 1px)
+			background-color bluegray
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

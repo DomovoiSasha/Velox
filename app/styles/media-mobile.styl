@@ -1,4 +1,7 @@
 +between(320px, 599px)
+	body
+		font(OpenSans, 2vw, 3.3vw, 200)
+		
 	.main-header
 		&__bunner
 			size(100%, auto)
@@ -45,3 +48,39 @@
 			font(OpenSans, 3.5vw, 3.5vw, 600)
 			border-bottom 1px solid rgba(#fff, 0.5)
 			border-radius 0vw
+			
+	.services
+		padding 8vw
+
+		&__title
+			margin-bottom 6.79vw
+			font(Lora, 3.07vw, 3.07vw, 600)
+			
+			&:after
+				markertitle(4vw, 10vw, 0.3vw)
+			
+		&__list
+			flex-wrap wrap
+			justify-content space-around
+
+	.service
+		size(38vw, auto)
+		padding 3vw 2vw
+		
+		&:nth-of-type(1),
+		&:nth-of-type(2)
+			margin-bottom 10vw
+
+		&__icon
+			size(9vw)
+			margin 0 auto 3.5vw
+
+		&__svg
+			padding 2.5vw
+
+		&__name
+			margin-bottom 2.5vw
+			font(OpenSans, 2vw, 2vw, 600)
+
+			&:after
+				markertitle(1.5vw, 3.5vw, 1px)

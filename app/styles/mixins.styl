@@ -19,3 +19,11 @@ placeholder(prop, value)
 		{prop} value
 	&::-moz-input-placeholder
 		{prop} value
+		
+markertitle($margin = 30px, $width = 150px, $height = 4px)
+	content ''
+	position relative
+	margin $margin auto 0
+	display block
+	size($width, $height)
+	background-color accent

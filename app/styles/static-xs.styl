@@ -1,6 +1,7 @@
 +between(0px, 319px)
 	body
 		min-width 320px
+		font(OpenSans, 6.4px, 10.6px, 200)
 	
 	.main-header
 		&__bunner
@@ -48,3 +49,39 @@
 			font(OpenSans, 11.2px, 11.2px, 600)
 			border-bottom 1px solid rgba(#fff, 0.5)
 			border-radius 0vw
+			
+	.services
+		padding 25.6px
+
+		&__title
+			margin-bottom 21.7px
+			font(Lora, 9.8px, 9.8px, 600)
+			
+			&:after
+				markertitle(12.8px, 32px, 1px)
+			
+		&__list
+			flex-wrap wrap
+			justify-content space-around
+
+	.service
+		size(121.6px, auto)
+		padding 9.6px 6.4px
+		
+		&:nth-of-type(1),
+		&:nth-of-type(2)
+			margin-bottom 32px
+
+		&__icon
+			size(28.8px)
+			margin 0 auto 11.2px
+
+		&__svg
+			padding 8px
+
+		&__name
+			margin-bottom 8px
+			font(OpenSans, 6.4px, 6.4px, 600)
+
+			&:after
+				markertitle(4.8px, 11.2px, 1px)
