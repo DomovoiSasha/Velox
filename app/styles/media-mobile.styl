@@ -117,3 +117,32 @@
 		&__item
 			padding 0.86vw 1.79vw
 			font(OpenSans, 2vw, 2vw, 400)
+			
+	.ui-state-active .work-types__item
+		&:before
+			content ''
+			position absolute
+			bottom 0
+			left 50%
+			size(3.4vw, 2px)
+			margin-left -1.7vw
+			background-color accent
+			
+	.brands
+		padding 5vw 8.21vw 8.57vw
+
+		&__title
+			margin-bottom 3.57vw
+			font(Lora, 3.07vw, 3.07vw, 600)
+
+			&:after
+				markertitle(2.14vw, 10.71vw, 0.29vw)
+			
+		&__list
+			flex-wrap wrap
+			justify-content center
+
+		&__logo
+			size(20%, auto)
+			align-self center
+			margin 3vw 4vw

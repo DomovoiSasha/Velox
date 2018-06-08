@@ -118,3 +118,32 @@
 		&__item
 			padding 2.8px 5.7px
 			font(OpenSans, 6.4px, 6.4px, 400)
+			
+	.ui-state-active .work-types__item
+		&:before
+			content ''
+			position absolute
+			bottom 0
+			left 50%
+			size(11px, 2px)
+			margin-left -5.5px
+			background-color accent
+			
+	.brands
+		padding 16px 26.3px 27.4px
+
+		&__title
+			margin-bottom 16px
+			font(Lora, 9.8px, 9.8px, 600)
+
+			&:after
+				markertitle(6.8px, 34.3px, 1px)
+			
+		&__list
+			flex-wrap wrap
+			justify-content center
+
+		&__logo
+			size(20%, auto)
+			align-self center
+			margin 9.6px 12.8px

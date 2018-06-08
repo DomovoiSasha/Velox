@@ -207,17 +207,54 @@ body
 	position relative
 	margin 0
 	color accent
+	text-align center
 	
 	&:before
 		content ''
 		position absolute
 		bottom 0
-		left 0
-		size(40%, 2px)
-		margin 0 30%
+		left 50%
+		size(24px, 2px)
+		margin-left -12px
 		background-color accent
 		
 		
+.brands
+	width 100%
+	padding 70px 115px 120px
+	text-align center
+	
+	&__title
+		position relative
+		margin-bottom 50px
+		text-transform uppercase
+		font(Lora, 43px, 43px, 600)
+		color textColor
+		
+		&:after
+			markertitle()
+			
+	&__list
+		display flex
+		justify-content space-between
+		flex-wrap nowrap
+		
+	&__logo
+		size(auto)
+		flex-shrink 0
+		align-self center
+
+
+
+
+
+
+
+
+
+
+
+
 		
 		
 		
