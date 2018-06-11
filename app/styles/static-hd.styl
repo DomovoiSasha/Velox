@@ -244,13 +244,76 @@ body
 		flex-shrink 0
 		align-self center
 
+.reviews
+	position relative
+	width 100%
+	padding 65px 145px 70px
+	background-color #f5f6f8
+	text-align center
+	
+	&__title
+		position relative
+		margin-bottom 60px
+		text-transform uppercase
+		font(Lora, 43px, 43px, 600)
+		color textColor
+		
+		&:after
+			markertitle()
+			
+	&__prev-review
+		position absolute
+		top 343px
+		left 145px
+		display block
+		size(33px)
+		background-color transparent
+		border none
+		
+	&__prev-icon
+		size(100%)
+		fill #999999
+		
+	&__next-review
+		position absolute
+		top 343px
+		right 145px
+		display block
+		size(33px)
+		background-color transparent
+		border none
+		
+	&__next-icon
+		size(100%)
+		fill #999999
 
-
-
-
-
-
-
+.review
+	position relative
+	display none
+	width 580px
+	margin 0 auto
+	
+	&:nth-of-type(2)
+		display block
+		
+	&__photo
+		size(135px)
+		margin-bottom 40px
+		border-radius 50%
+		
+	&__description
+		margin-bottom 35px
+		font(Lora, 24px, 30px, 400)
+		color textColor
+		
+	&__user
+		font(Lora, 18px, 30px, 400)
+		color textColor
+		
+	&__source
+		font(Lora, 18px, 30px, 400)
+		color textColor
+		text-decoration underline
 
 
 
