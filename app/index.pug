@@ -219,14 +219,66 @@ DOCTYPE
 							use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_right')
 							
 					
+			footer.main-footer
+				div.main-footer__top-footer
+					div.main-footer__footer-nav.footer-nav
+						a(href="#").footer-nav__link Home
+						a(href="#").footer-nav__link About
+						a(href="#").footer-nav__link Services
+						a(href="#").footer-nav__link Blog
+						a(href="#").footer-nav__link Contact Us
+					div.main-footer__contacts.contacts
+						h3.contacts__title Contact Us
+						h4.contacts__subtitle Our Address
+						p.contacts__date House No,11132, Sector 31, Gurgaon 122001  India
+						h4.contacts__subtitle Call Us
+						p.contacts__date +91-9876543210
+						p.contacts__date +01262219018
+						h4.contacts__subtitle Email Us
+						p.contacts__date contactus@mail.com
+						
+					form(action="post").main-footer__feedback-form.feedback-form
+						label(for="name").feedback-form__label-name Name :
+							input(type="text", id="name", name="user-name").feedback-form__input-name
+						label(for="subject").feedback-form__label-subject Subject :
+							input(type="text", id="subject", name="subject").feedback-form__input-subject
+						label(for="message").feedback-form__label-message Your Message :
+							textarea( id="message", name="message", cols="30", rows="10").feedback-form__input-message
+						button.feedback-form__btn Send message
+						
 				
-				
-				
-				
-				
+				div.main-footer__bottom-footer
+					p.main-footer__copyright &copy; 2016 Nishant Bazzad
 					
+					div.main-footer__up-btn
+						svg.main-footer__up-icon
+							use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_up')
+							
+					div.main-footer__social.social
+						a(href="#").social__link
+							svg.social__icon
+								use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_facebook')
+						a(href="#").social__link
+							svg.social__icon
+								use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_twitter')
+						a(href="#").social__link
+							svg.social__icon
+								use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_dots')
+						a(href="#").social__link
+							svg.social__icon
+								use(x='0' y='0' xlink:href='assets/images/icon.svg#icon_linkedin')
 					
-					
+			div.modal-form
+				div.modal-form__window
+					p Форма не отправлена. 
+					p Программа обработки не найдена.
+				div.modal-form__overlay
+				
+			div.modal-link
+				div.modal-link__window
+					p Переход по ссылке отменен.
+					p Страница не найдена.
+				div.modal-link__overlay
 					
 			
 			script(type='text/javascript' src="assets/scripts/script.js")

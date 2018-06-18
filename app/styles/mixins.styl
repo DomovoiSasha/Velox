@@ -43,3 +43,23 @@ btn($paddingg = 26px, $paddingv = 71px, $fsize = 25px, $bradius = 36px)
 	&:active
 		background-color transparent
 		border-color accent
+		
+label()
+	font(OpenSans, 25px, 38px, 300)
+	color #ffffff
+	text-align left
+	
+input()
+	padding 10px 22px
+	background-color transparent
+	font(OpenSans, 20px, 30px, 300)
+	color #ffffff
+	text-align left
+	border none
+	border-bottom 2px solid #72747b
+	placeholder(color, #fff)
+	placeholder(font-size, 20px)
+	placeholder(line-height, 30px)
+	
+	&:focus()
+		border-bottom-color accent

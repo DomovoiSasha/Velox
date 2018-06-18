@@ -315,9 +315,207 @@ body
 		color textColor
 		text-decoration underline
 
-
-
-
+.main-footer
+	&__top-footer
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		width 100%
+		padding 70px
+		background-color bluegrayColor
 		
+	&__bottom-footer
+		position relative
+		display flex
+		flex-wrap nowrap
+		justify-content space-between
+		width 100%
+		padding 28px 115px
+		background-color #ffffff
 		
+	&__copyright
+		font(OpenSans, 13px, 32px, 300)
 		
+	&__up-btn
+		position absolute
+		top -33px
+		left 50%
+		size(66px)
+		margin-left -33px
+		padding 24px
+		background-color accent
+		border 2px solid transparent
+		border-radius 50%
+		box-shadow 0 2px 2px 0 rgba(#000, 0.3)
+
+		&:hover
+			background-color lighten(accent, 20%)
+
+		&:active
+			background-color transparent
+			border-color accent
+		
+	&__up-icon
+		size(100%)
+		fill #ffffff
+		
+.footer-nav
+	width 100%
+	text-align right
+	
+	&__link
+		padding 17px 15px
+		font(OpenSans, 21px, 30px, 300)
+		color #ffffff
+		border-radius 20px
+		
+		&:hover
+			background-color rgba(#ffffff, 0.3)
+			
+		&:active
+			background-color rgba(#ffffff, 0.3)
+			color accent
+
+.contacts
+	display inline-block
+	position relative
+	width 380px
+	padding-top 53px
+	padding-left 45px
+	
+	&__title
+		position absolute
+		top -35px
+		left 45px
+		font(Lora, 33px, 40px, 600)
+		color #ffffff
+		
+	&__subtitle
+		padding-top 62px
+		padding-bottom 25px
+		font(OpenSans, 24px, 30px, 600)
+		color #ffffff
+		text-transform uppercase
+		
+	&__date
+		font(OpenSans, 18px, 24px, 300)
+		color grayText
+		
+.feedback-form
+	padding-top 100px
+	
+	&__label-name
+		label()
+		display inline-block
+		width 360px
+		margin-right 50px
+		margin-bottom 55px
+		
+	&__input-name
+		input()
+		display block
+		width 100%
+		
+	&__label-subject
+		display inline-block
+		label()
+		width 360px
+		margin-bottom 55px
+		
+	&__input-subject
+		input()
+		display block
+		width 100%
+		
+	&__label-message
+		label()
+		display block
+		width 100%
+		margin-bottom 60px
+		
+	&__input-message
+		input()
+		display block
+		size(100%, 140px)
+		
+	&__btn
+		btn(21px, 56px, 25px, 32px)
+		border-radius 32px
+		
+.social
+	display flex
+	flex-wrap nowrap
+	
+	&__link
+		display flex
+		flex-wrap nowrap
+		justify-content center
+		align-items center
+		size(32px)
+		margin 0 5px
+		background-color grayText
+		border 1px solid transparent
+		border-radius 50%
+		
+		&:hover
+			background-color transparent
+			border-color accent
+			
+			.social__icon
+				fill accent
+		
+	&__icon
+		size(55%)
+		fill #fff
+		
+.modal-form
+	display none
+	
+	&__window
+		position fixed
+		top 50vh
+		left 50vw
+		display block
+		size(500px, 300px)
+		padding 110px 0
+		margin-left -250px
+		margin-top -150px
+		background-color #fff
+		color textColor
+		text-align center
+		font(Roboto, 20px, 30px, 300)
+		z-index 100
+	
+	&__overlay
+		position fixed
+		top 0
+		left 0
+		display block
+		size(100%)
+		background-color rgba(#000, 70%)
+	
+.modal-link
+	display none
+	
+	&__window
+		position fixed
+		top 50vh
+		left 50vw
+		display block
+		size(500px, 300px)
+		padding 110px 0
+		margin-left -250px
+		margin-top -150px
+		background-color #fff
+		color textColor
+		text-align center
+		font(Roboto, 20px, 30px, 300)
+		z-index 100
+	
+	&__overlay
+		position fixed
+		top 0
+		left 0
+		display block
+		size(100%)
+		background-color rgba(#000, 70%)
